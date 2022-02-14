@@ -98,22 +98,22 @@
 
 /* Images need to be resized/cropped for loading efficiency */
 .about {
-    background-image: url(../images/backgrounds/paper_grain.jpg);
+    background-image: url(../images/thumbnails/paper_grain_thumb.jpg);
     background-size: cover;
 }
 
 .projects {
-    background-image: url(../images/backgrounds/blue_purple.jpg);
+    background-image: url(../images/thumbnails/blue_purple_thumb.jpg);
     background-size: cover;
 }
 
 .games {
-    background-image: url(../images/backgrounds/green_chalk.jpg);
+    background-image: url(../images/thumbnails/green_chalk_thumb.jpg);
     background-size: cover;
 }
 
 .skills {
-    background-image: url(../images/backgrounds/white_gray.jpg);
+    background-image: url(../images/thumbnails/white_gray_thumb.jpg);
     background-size: cover;
 }
 
