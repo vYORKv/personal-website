@@ -24,21 +24,38 @@
     transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 }
 
-/* For some reason background-image for gradients is not applying to page while background-color does */
+/* For some reason background-image for gradients is not applying to page while background-images with jpg does */
+/* I will temporarily change to images and hope to figure out this odd behavior later */
 .about-page {
-    background-color: rgb(183, 183, 196);
+    background: url(../images/backgrounds/paper_grain.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .projects-page {
-    background-color: rgb(144, 51, 206);
+    background: url(../images/backgrounds/blue_purple.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .games-page {
-    background-color: rgb(161, 28, 106);
+    background: url(../images/backgrounds/green_chalk.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .skills-page {
-    background-color: rgb(159, 159, 161);
+    background: url(../images/backgrounds/white_gray.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .content {
@@ -75,54 +92,29 @@
     font-size: 20pt;
 }
 
-.nav-games, .nav-projects {
+#nav-games, #nav-projects {
     color: whitesmoke;
 }
 
+/* Images need to be resized/cropped for loading efficiency */
 .about {
-    background-image: linear-gradient(55deg, rgba(208, 208, 208, 0.03) 0%, 
-    rgba(208, 208, 208, 0.03) 20%,rgba(55, 55, 55, 0.03) 20%, 
-    rgba(55, 55, 55, 0.03) 40%,rgba(81, 81, 81, 0.03) 40%, 
-    rgba(81, 81, 81, 0.03) 60%,rgba(208, 208, 208, 0.03) 60%, 
-    rgba(208, 208, 208, 0.03) 80%,rgba(191, 191, 191, 0.03) 80%, 
-    rgba(191, 191, 191, 0.03) 100%),linear-gradient(291deg, rgba(190, 190, 190, 0.02) 0%, 
-    rgba(190, 190, 190, 0.02) 14.286%,rgba(105, 105, 105, 0.02) 14.286%, 
-    rgba(105, 105, 105, 0.02) 28.572%,rgba(230, 230, 230, 0.02) 28.572%, 
-    rgba(230, 230, 230, 0.02) 42.858%,rgba(216, 216, 216, 0.02) 42.858%, 
-    rgba(216, 216, 216, 0.02) 57.144%,rgba(181, 181, 181, 0.02) 57.144%, 
-    rgba(181, 181, 181, 0.02) 71.42999999999999%,rgba(129, 129, 129, 0.02) 71.43%, 
-    rgba(129, 129, 129, 0.02) 85.71600000000001%,rgba(75, 75, 75, 0.02) 85.716%, 
-    rgba(75, 75, 75, 0.02) 100.002%),linear-gradient(32deg, rgba(212, 212, 212, 0.03) 0%, 
-    rgba(212, 212, 212, 0.03) 12.5%,rgba(223, 223, 223, 0.03) 12.5%, rgba(223, 223, 223, 0.03) 25%,
-    rgba(11, 11, 11, 0.03) 25%, rgba(11, 11, 11, 0.03) 37.5%,rgba(86, 86, 86, 0.03) 37.5%, 
-    rgba(86, 86, 86, 0.03) 50%,rgba(106, 106, 106, 0.03) 50%, rgba(106, 106, 106, 0.03) 62.5%,
-    rgba(220, 220, 220, 0.03) 62.5%, rgba(220, 220, 220, 0.03) 75%,rgba(91, 91, 91, 0.03) 75%, 
-    rgba(91, 91, 91, 0.03) 87.5%,rgba(216, 216, 216, 0.03) 87.5%, rgba(216, 216, 216, 0.03) 100%),
-    linear-gradient(312deg, rgba(113, 113, 113, 0.01) 0%, rgba(113, 113, 113, 0.01) 14.286%,rgba(54, 54, 54, 0.01) 14.286%, 
-    rgba(54, 54, 54, 0.01) 28.572%,rgba(166, 166, 166, 0.01) 28.572%, rgba(166, 166, 166, 0.01) 42.858%,
-    rgba(226, 226, 226, 0.01) 42.858%, rgba(226, 226, 226, 0.01) 57.144%,rgba(109, 109, 109, 0.01) 57.144%, 
-    rgba(109, 109, 109, 0.01) 71.42999999999999%,rgba(239, 239, 239, 0.01) 71.43%, rgba(239, 239, 239, 0.01) 85.71600000000001%,
-    rgba(54, 54, 54, 0.01) 85.716%, rgba(54, 54, 54, 0.01) 100.002%),linear-gradient(22deg, rgba(77, 77, 77, 0.03) 0%, 
-    rgba(77, 77, 77, 0.03) 20%,rgba(235, 235, 235, 0.03) 20%, rgba(235, 235, 235, 0.03) 40%,rgba(215, 215, 215, 0.03) 40%, 
-    rgba(215, 215, 215, 0.03) 60%,rgba(181, 181, 181, 0.03) 60%, rgba(181, 181, 181, 0.03) 80%,rgba(193, 193, 193, 0.03) 80%, 
-    rgba(193, 193, 193, 0.03) 100%),linear-gradient(80deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 14.286%,
-    rgba(114, 114, 114, 0.02) 14.286%, rgba(114, 114, 114, 0.02) 28.572%,rgba(240, 240, 240, 0.02) 28.572%, 
-    rgba(240, 240, 240, 0.02) 42.858%,rgba(221, 221, 221, 0.02) 42.858%, rgba(221, 221, 221, 0.02) 57.144%,
-    rgba(74, 74, 74, 0.02) 57.144%, rgba(74, 74, 74, 0.02) 71.42999999999999%,rgba(201, 201, 201, 0.02) 71.43%, 
-    rgba(201, 201, 201, 0.02) 85.71600000000001%,rgba(187, 187, 187, 0.02) 85.716%, rgba(187, 187, 187, 0.02) 100.002%),
-    linear-gradient(257deg, rgba(72, 72, 72, 0.03) 0%, rgba(72, 72, 72, 0.03) 16.667%,rgba(138, 138, 138, 0.03) 16.667%, rgba(138, 138, 138, 0.03) 33.334%,rgba(54, 54, 54, 0.03) 33.334%, rgba(54, 54, 54, 0.03) 50.001000000000005%,rgba(161, 161, 161, 0.03) 50.001%, rgba(161, 161, 161, 0.03) 66.668%,rgba(17, 17, 17, 0.03) 66.668%, rgba(17, 17, 17, 0.03) 83.33500000000001%,rgba(230, 230, 230, 0.03) 83.335%, rgba(230, 230, 230, 0.03) 100.002%),linear-gradient(47deg, rgba(191, 191, 191, 0.01) 0%, rgba(191, 191, 191, 0.01) 16.667%,rgba(27, 27, 27, 0.01) 16.667%, rgba(27, 27, 27, 0.01) 33.334%,rgba(66, 66, 66, 0.01) 33.334%, rgba(66, 66, 66, 0.01) 50.001000000000005%,rgba(36, 36, 36, 0.01) 50.001%, rgba(36, 36, 36, 0.01) 66.668%,rgba(230, 230, 230, 0.01) 66.668%, rgba(230, 230, 230, 0.01) 83.33500000000001%,rgba(93, 93, 93, 0.01) 83.335%, rgba(93, 93, 93, 0.01) 100.002%),linear-gradient(90deg, #ffffff,#ffffff);
+    background-image: url(../images/backgrounds/paper_grain.jpg);
+    background-size: cover;
 }
 
 .projects {
-    background-image: radial-gradient(circle at 10% 8%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 87% 45%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 9% 67%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 31% 83%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 46% 54%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 16% 24%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 18% 9%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 85% 69%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 55% 7%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 69% 69%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 68% 60%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),linear-gradient(135deg, rgb(3, 7, 46),rgb(24, 44, 146));
+    background-image: url(../images/backgrounds/blue_purple.jpg);
+    background-size: cover;
 }
 
 .games {
-    background-image: linear-gradient(135deg, rgb(169, 169, 169),rgb(41, 41, 41)),linear-gradient(22.5deg, rgb(84, 190, 204) 0%, rgb(84, 190, 204) 19%,rgb(89, 172, 188) 19%, rgb(89, 172, 188) 20%,rgb(94, 154, 171) 20%, rgb(94, 154, 171) 22%,rgb(99, 136, 155) 22%, rgb(99, 136, 155) 31%,rgb(105, 117, 138) 31%, rgb(105, 117, 138) 33%,rgb(110, 99, 122) 33%, rgb(110, 99, 122) 45%,rgb(115, 81, 105) 45%, rgb(115, 81, 105) 51%,rgb(120, 63, 89) 51%, rgb(120, 63, 89) 100%),linear-gradient(45deg, rgb(84, 190, 204) 0%, rgb(84, 190, 204) 19%,rgb(89, 172, 188) 19%, rgb(89, 172, 188) 20%,rgb(94, 154, 171) 20%, rgb(94, 154, 171) 22%,rgb(99, 136, 155) 22%, rgb(99, 136, 155) 31%,rgb(105, 117, 138) 31%, rgb(105, 117, 138) 33%,rgb(110, 99, 122) 33%, rgb(110, 99, 122) 45%,rgb(115, 81, 105) 45%, rgb(115, 81, 105) 51%,rgb(120, 63, 89) 51%, rgb(120, 63, 89) 100%); background-blend-mode:overlay, overlay, normal;
+    background-image: url(../images/backgrounds/green_chalk.jpg);
+    background-size: cover;
 }
 
 .skills {
-    background-image: linear-gradient(55deg, rgba(44, 44, 44,0.01) 0%, rgba(44, 44, 44,0.01) 15%,rgba(191, 191, 191,0.01) 15%, rgba(191, 191, 191,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(8deg, rgba(175, 175, 175,0.03) 0%, rgba(175, 175, 175,0.03) 15%,rgba(203, 203, 203,0.03) 15%, rgba(203, 203, 203,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(49deg, rgba(88, 88, 88,0.02) 0%, rgba(88, 88, 88,0.02) 15%,rgba(243, 243, 243,0.02) 15%, rgba(243, 243, 243,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(110deg, rgba(63, 63, 63,0.02) 0%, rgba(63, 63, 63,0.02) 15%,rgba(29, 29, 29,0.02) 15%, rgba(29, 29, 29,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(292deg, rgba(232, 232, 232,0.02) 0%, rgba(232, 232, 232,0.02) 15%,rgba(45, 45, 45,0.02) 15%, rgba(45, 45, 45,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(217deg, rgba(30, 30, 30,0.03) 0%, rgba(30, 30, 30,0.03) 15%,rgba(218, 218, 218,0.03) 15%, rgba(218, 218, 218,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(113deg, rgba(236, 236, 236,0.02) 0%, rgba(236, 236, 236,0.02) 15%,rgba(206, 206, 206,0.02) 15%, rgba(206, 206, 206,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(187deg, rgba(0, 0, 0,0.01) 0%, rgba(0, 0, 0,0.01) 15%,rgba(209, 209, 209,0.01) 15%, rgba(209, 209, 209,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(337deg, rgba(76, 76, 76,0.03) 0%, rgba(76, 76, 76,0.03) 15%,rgba(130, 130, 130,0.03) 15%, rgba(130, 130, 130,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(344deg, rgba(95, 95, 95,0.02) 0%, rgba(95, 95, 95,0.02) 15%,rgba(57, 57, 57,0.02) 15%, rgba(57, 57, 57,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(50deg, rgba(234, 234, 234,0.01) 0%, rgba(234, 234, 234,0.01) 15%,rgba(231, 231, 231,0.01) 15%, rgba(231, 231, 231,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(336deg, rgba(149, 149, 149,0.01) 0%, rgba(149, 149, 149,0.01) 15%,rgba(114, 114, 114,0.01) 15%, rgba(114, 114, 114,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(176deg, rgba(104, 104, 104,0.01) 0%, rgba(104, 104, 104,0.01) 15%,rgba(102, 102, 102,0.01) 15%, rgba(102, 102, 102,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(178deg, rgba(247, 247, 247,0.03) 0%, rgba(247, 247, 247,0.03) 15%,rgba(62, 62, 62,0.03) 15%, rgba(62, 62, 62,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(304deg, rgba(27, 27, 27,0.03) 0%, rgba(27, 27, 27,0.03) 15%,rgba(164, 164, 164,0.03) 15%, rgba(164, 164, 164,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(254deg, rgba(221, 221, 221,0.03) 0%, rgba(221, 221, 221,0.03) 15%,rgba(3, 3, 3,0.03) 15%, rgba(3, 3, 3,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(312deg, rgba(1, 1, 1,0.01) 0%, rgba(1, 1, 1,0.01) 15%,rgba(80, 80, 80,0.01) 15%, rgba(80, 80, 80,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(353deg, rgba(145, 145, 145,0.03) 0%, rgba(145, 145, 145,0.03) 15%,rgba(169, 169, 169,0.03) 15%, rgba(169, 169, 169,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(264deg, rgba(53, 53, 53,0.03) 0%, rgba(53, 53, 53,0.03) 15%,rgba(153, 153, 153,0.03) 15%, rgba(153, 153, 153,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(319deg, rgba(130, 130, 130,0.03) 0%, rgba(130, 130, 130,0.03) 15%,rgba(5, 5, 5,0.03) 15%, rgba(5, 5, 5,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(255deg, rgba(160, 160, 160,0.01) 0%, rgba(160, 160, 160,0.01) 15%,rgba(155, 155, 155,0.01) 15%, rgba(155, 155, 155,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(175deg, rgba(153, 153, 153,0.01) 0%, rgba(153, 153, 153,0.01) 15%,rgba(31, 31, 31,0.01) 15%, rgba(31, 31, 31,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(169deg, rgba(248, 248, 248,0.02) 0%, rgba(248, 248, 248,0.02) 15%,rgba(102, 102, 102,0.02) 15%, rgba(102, 102, 102,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(314deg, rgba(236, 236, 236,0.03) 0%, rgba(236, 236, 236,0.03) 15%,rgba(161, 161, 161,0.03) 15%, rgba(161, 161, 161,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(159deg, rgba(73, 73, 73,0.03) 0%, rgba(73, 73, 73,0.03) 15%,rgba(252, 252, 252,0.03) 15%, rgba(252, 252, 252,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(26deg, rgba(44, 44, 44,0.01) 0%, rgba(44, 44, 44,0.01) 15%,rgba(50, 50, 50,0.01) 15%, rgba(50, 50, 50,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(119deg, rgba(144, 144, 144,0.01) 0%, rgba(144, 144, 144,0.01) 15%,rgba(172, 172, 172,0.01) 15%, rgba(172, 172, 172,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(353deg, rgba(110, 110, 110,0.02) 0%, rgba(110, 110, 110,0.02) 15%,rgba(153, 153, 153,0.02) 15%, rgba(153, 153, 153,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(137deg, rgba(239, 239, 239,0.01) 0%, rgba(239, 239, 239,0.01) 15%,rgba(66, 66, 66,0.01) 15%, rgba(66, 66, 66,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(57deg, rgba(215, 215, 215,0.02) 0%, rgba(215, 215, 215,0.02) 15%,rgba(184, 184, 184,0.02) 15%, rgba(184, 184, 184,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(15deg, rgba(223, 223, 223,0.03) 0%, rgba(223, 223, 223,0.03) 15%,rgba(42, 42, 42,0.03) 15%, rgba(42, 42, 42,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(286deg, rgba(37, 37, 37,0.02) 0%, rgba(37, 37, 37,0.02) 15%,rgba(29, 29, 29,0.02) 15%, rgba(29, 29, 29,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(2deg, rgba(246, 246, 246,0.03) 0%, rgba(246, 246, 246,0.03) 15%,rgba(87, 87, 87,0.03) 15%, rgba(87, 87, 87,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(62deg, rgba(120, 120, 120,0.03) 0%, rgba(120, 120, 120,0.03) 15%,rgba(105, 105, 105,0.03) 15%, rgba(105, 105, 105,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(302deg, rgba(26, 26, 26,0.03) 0%, rgba(26, 26, 26,0.03) 15%,rgba(170, 170, 170,0.03) 15%, rgba(170, 170, 170,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(299deg, rgba(16, 16, 16,0.03) 0%, rgba(16, 16, 16,0.03) 15%,rgba(82, 82, 82,0.03) 15%, rgba(82, 82, 82,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(228deg, rgba(101, 101, 101,0.02) 0%, rgba(101, 101, 101,0.02) 15%,rgba(253, 253, 253,0.02) 15%, rgba(253, 253, 253,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(127deg, rgba(182, 182, 182,0.02) 0%, rgba(182, 182, 182,0.02) 15%,rgba(11, 11, 11,0.02) 15%, rgba(11, 11, 11,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(216deg, rgba(108, 108, 108,0.02) 0%, rgba(108, 108, 108,0.02) 15%,rgba(19, 19, 19,0.02) 15%, rgba(19, 19, 19,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(9deg, rgba(1, 1, 1,0.03) 0%, rgba(1, 1, 1,0.03) 15%,rgba(214, 214, 214,0.03) 15%, rgba(214, 214, 214,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(72deg, rgba(48, 48, 48,0.02) 0%, rgba(48, 48, 48,0.02) 15%,rgba(211, 211, 211,0.02) 15%, rgba(211, 211, 211,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(148deg, rgba(70, 70, 70,0.03) 0%, rgba(70, 70, 70,0.03) 15%,rgba(145, 145, 145,0.03) 15%, rgba(145, 145, 145,0.03) 50%,transparent 50%, transparent 100%),linear-gradient(8deg, rgba(132, 132, 132,0.01) 0%, rgba(132, 132, 132,0.01) 15%,rgba(179, 179, 179,0.01) 15%, rgba(179, 179, 179,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(210deg, rgba(247, 247, 247,0.01) 0%, rgba(247, 247, 247,0.01) 15%,rgba(132, 132, 132,0.01) 15%, rgba(132, 132, 132,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(289deg, rgba(255, 255, 255,0.01) 0%, rgba(255, 255, 255,0.01) 15%,rgba(53, 53, 53,0.01) 15%, rgba(53, 53, 53,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(1deg, rgba(60, 60, 60,0.01) 0%, rgba(60, 60, 60,0.01) 15%,rgba(64, 64, 64,0.01) 15%, rgba(64, 64, 64,0.01) 50%,transparent 50%, transparent 100%),linear-gradient(197deg, rgba(219, 219, 219,0.02) 0%, rgba(219, 219, 219,0.02) 15%,rgba(117, 117, 117,0.02) 15%, rgba(117, 117, 117,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(223deg, rgba(27, 27, 27,0.02) 0%, rgba(27, 27, 27,0.02) 15%,rgba(64, 64, 64,0.02) 15%, rgba(64, 64, 64,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(306deg, rgba(70, 70, 70,0.02) 0%, rgba(70, 70, 70,0.02) 15%,rgba(94, 94, 94,0.02) 15%, rgba(94, 94, 94,0.02) 50%,transparent 50%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    background-image: url(../images/backgrounds/white_gray.jpg);
+    background-size: cover;
 }
 
 a {
