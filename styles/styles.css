@@ -95,7 +95,7 @@
 .games-conatiner, .skills-container {
     grid-template: 50px / repeat(4, 110px);
     gap: 4vh;
-    min-height: 70vh;
+    min-height: 10vh;
 }
 
 .nav {
@@ -112,12 +112,14 @@
 
 .projects-bar {
     font-size: 15pt;
+    border: groove 5px gray;
 }
 
 #nav-games, #nav-projects, #nav-landing {
     color: whitesmoke;
 }
 
+/* Page backgrounds */
 .about {
     background-image: url(../images/thumbnails/paper_grain_thumb.jpg);
     background-size: cover;
@@ -138,6 +140,8 @@
     background-size: cover;
 }
 
+
+
 .landing {
     background-image: radial-gradient(circle at center center, rgba(33,33,33,0),
     rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,
@@ -145,10 +149,32 @@
     transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 }
 
+/* Project page specific */
 .project-links {
     display: grid;
+    grid-template: repeat(4, 60px) / 50vh;
+    gap: 25px;
 }
 
+.p-title {
+    display: flex;
+    background-color: gray;
+    border: groove 3px gray;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px black;
+    padding-left: 15px;
+    font-size: 15pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/thumbnails/white_gray_thumb.jpg);
+}
+
+/* .p-link {
+    font-size: 12pt;
+} */
+
+/* Handles animation underlining links during hover */
 a {
     position: relative;
     color: #000;
@@ -173,5 +199,51 @@ a::before {
 }
 
 a:hover::before {
+    transform: scaleX(1);
+}
+
+.black-text {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.black-text::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.black-text:hover::before {
+    transform: scaleX(1);
+}
+
+.white-text {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.white-text::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.white-text:hover::before {
     transform: scaleX(1);
 }
