@@ -67,9 +67,20 @@
     gap: 10vh;
 }
 
-.heading-container > *{
+.projects-content {
+    gap: 3vh;
+}
+
+.heading-container > * {
     text-align: center;
     color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
+}
+
+.projects-heading > * {
+    text-align: center;
+    color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
 }
@@ -78,6 +89,13 @@
     display: grid;
     grid-template: 100px / repeat(4, 150px);
     gap: 6vh;
+}
+
+.projects-container, .about-container,
+.games-conatiner, .skills-container {
+    grid-template: 50px / repeat(4, 110px);
+    gap: 4vh;
+    min-height: 70vh;
 }
 
 .nav {
@@ -92,11 +110,14 @@
     font-size: 20pt;
 }
 
-#nav-games, #nav-projects {
+.projects-bar {
+    font-size: 15pt;
+}
+
+#nav-games, #nav-projects, #nav-landing {
     color: whitesmoke;
 }
 
-/* Images need to be resized/cropped for loading efficiency */
 .about {
     background-image: url(../images/thumbnails/paper_grain_thumb.jpg);
     background-size: cover;
@@ -115,6 +136,17 @@
 .skills {
     background-image: url(../images/thumbnails/white_gray_thumb.jpg);
     background-size: cover;
+}
+
+.landing {
+    background-image: radial-gradient(circle at center center, rgba(33,33,33,0),
+    rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,
+    transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,
+    transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+
+.project-links {
+    display: grid;
 }
 
 a {
