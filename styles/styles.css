@@ -58,6 +58,10 @@
     background-size: cover;
 }
 
+.cobblebreak-page {
+    background-color: #472d3c;
+}
+
 .content {
     display: flex;
     justify-content: center;
@@ -67,7 +71,7 @@
     gap: 10vh;
 }
 
-.projects-content, .games-content {
+.projects-content, .games-content, .cobblebreak-content {
     gap: 3vh;
 }
 
@@ -92,6 +96,13 @@
     text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
 }
 
+.cobblebreak-heading > * {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
+}
+
 .nav-container {
     display: grid;
     grid-template: 100px / repeat(4, 150px);
@@ -99,7 +110,8 @@
 }
 
 .projects-container, .about-container,
-.games-conatiner, .skills-container {
+.games-container, .skills-container,
+.cobblebreak-container {
     grid-template: 50px / repeat(4, 110px);
     gap: 4vh;
     min-height: 10vh;
@@ -117,7 +129,7 @@
     font-size: 20pt;
 }
 
-.projects-bar, .games-bar {
+.projects-bar, .games-bar, .cobblebreak-bar {
     font-size: 15pt;
     border: groove 5px gray;
 }
@@ -146,8 +158,6 @@
     background-image: url(../images/thumbnails/white_gray_thumb.jpg);
     background-size: cover;
 }
-
-
 
 .landing {
     background-image: radial-gradient(circle at center center, rgba(33,33,33,0),
@@ -200,9 +210,16 @@
 #cobblebreak-thumb {
     background-image: url(../images/games/cobblebreak-cover.png);
     background-size: cover;
-
 }
 
+/* Cobblebreak Specific */
+
+.cobblebreak-container {
+    display: grid;
+    grid-template: 40px / 100px;
+    gap: 6vh;
+    min-height: 1px;
+}
 
 /* .p-link {
     font-size: 12pt;
@@ -295,7 +312,7 @@ a:hover::before {
     position: absolute;
     display: block;
     width: 100%;
-    height: 2px;
+    height: 5px;
     bottom: 0;
     left: 0;
     background-color: #8a6f39;
