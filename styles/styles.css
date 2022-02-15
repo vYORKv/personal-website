@@ -71,7 +71,8 @@
     gap: 10vh;
 }
 
-.projects-content, .games-content, .cobblebreak-content {
+.projects-content, .games-content, 
+.cobblebreak-content, .skills-content {
     gap: 3vh;
 }
 
@@ -103,6 +104,13 @@
     text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
 }
 
+.skills-heading > * {
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
+}
+
 .nav-container {
     display: grid;
     grid-template: 100px / repeat(4, 150px);
@@ -129,7 +137,8 @@
     font-size: 20pt;
 }
 
-.projects-bar, .games-bar, .cobblebreak-bar {
+.projects-bar, .games-bar, 
+.cobblebreak-bar, .skills-bar {
     font-size: 15pt;
     border: groove 5px gray;
 }
@@ -212,13 +221,29 @@
     background-size: cover;
 }
 
-/* Cobblebreak Specific */
+/* Cobblebreak page specific */
 
 .cobblebreak-container {
     display: grid;
     grid-template: 40px / 100px;
     gap: 6vh;
     min-height: 1px;
+}
+
+/* Skills page specific */
+.skills-lists {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 100px 100px;
+    grid-auto-flow: column;
+}
+
+.skills-lists > * {
+    text-align: left;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
 }
 
 /* .p-link {
