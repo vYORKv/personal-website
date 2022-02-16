@@ -279,8 +279,11 @@ li {
     color: black;
     font-size: 18pt;
     font-family: 'Courier New', Courier, monospace;
-/*     text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
- */}
+}
+
+ .about-content {
+    min-height: 3vh;
+}
 
 /* .p-link {
     font-size: 12pt;
