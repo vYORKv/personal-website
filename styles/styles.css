@@ -26,6 +26,7 @@
 
 /* For some reason background-image for gradients is not applying to page while background-images with jpg does */
 /* I will temporarily change to images and hope to figure out this odd behavior later */
+/* Background images all need to be resized to 2k resolution max to increase render speed */
 .about-page {
     background: url(../images/backgrounds/paper_grain.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -222,7 +223,6 @@
 }
 
 /* Cobblebreak page specific */
-
 .cobblebreak-container {
     display: grid;
     grid-template: 40px / 100px;
@@ -234,16 +234,25 @@
 .skills-lists {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: 100px 100px;
+    grid-template-columns: repeat(4, 175px);
+    grid-template-rows: 75px 300px;
     grid-auto-flow: column;
+    column-gap: 25px;
 }
 
 .skills-lists > * {
     text-align: left;
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+}
+
+.skills-content {
+    min-height: 3vh;
+}
+
+li {
+    font-size: 15pt;
 }
 
 /* .p-link {
