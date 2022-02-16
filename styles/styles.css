@@ -73,7 +73,8 @@
 }
 
 .projects-content, .games-content, 
-.cobblebreak-content, .skills-content {
+.cobblebreak-content, .skills-content,
+.about-content {
     gap: 3vh;
 }
 
@@ -112,6 +113,13 @@
     text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
 }
 
+.about-heading > * {
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
+}
+
 .nav-container {
     display: grid;
     grid-template: 100px / repeat(4, 150px);
@@ -139,7 +147,8 @@
 }
 
 .projects-bar, .games-bar, 
-.cobblebreak-bar, .skills-bar {
+.cobblebreak-bar, .skills-bar,
+.about-bar {
     font-size: 15pt;
     border: groove 5px gray;
 }
@@ -258,6 +267,20 @@ ul {
 li {
     font-size: 15pt;
 }
+
+/* About page specific */
+.about-me {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30vh;
+    max-width: 70vh;
+    text-align: left;
+    text-indent: 10pt;
+    color: black;
+    font-size: 18pt;
+    font-family: 'Courier New', Courier, monospace;
+/*     text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+ */}
 
 /* .p-link {
     font-size: 12pt;
