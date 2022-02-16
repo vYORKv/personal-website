@@ -234,7 +234,7 @@
 .skills-lists {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 175px);
+    grid-template-columns: repeat(3, 250px);
     grid-template-rows: 75px 300px;
     grid-auto-flow: column;
     column-gap: 25px;
@@ -245,6 +245,10 @@
     color: black;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+}
+
+ul {
+    border: solid;
 }
 
 .skills-content {
