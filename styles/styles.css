@@ -203,6 +203,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-image: url(../images/thumbnails/white_gray_thumb.jpg);
 }
 
@@ -244,7 +245,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: 75px 300px;
+    grid-template-rows: 75px 315px;
     grid-auto-flow: column;
     column-gap: 25px;
 }
@@ -271,6 +272,50 @@ li {
 /* About page specific */
 .about-me {
     display: flex;
+    flex-direction: row;
+    text-align: left;
+    text-indent: 10pt;
+    color: black;
+    font-size: 18pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about-text {
+    width: 60%;
+    max-width: 70vh;
+    margin-left: 30vh;
+}
+
+.about-images {
+    width: 40%;
+}
+
+.a-img {
+    filter: drop-shadow(10px 10px 4px #45454d9c);
+}
+
+p {
+    padding-bottom: 150px;
+}
+
+#me {
+    padding: 50px;
+    border-radius: 30%;
+}
+
+#lambda, #judo {
+    padding: 50px;
+    border-radius: 20%;
+}
+
+#welding {
+    padding: 25px;
+    padding-left: 50px;
+    border-radius: 20%;
+}
+
+/* .about-me {
+    display: flex;
     flex-direction: column;
     margin-left: 30vh;
     max-width: 70vh;
@@ -283,7 +328,7 @@ li {
 
  .about-content {
     min-height: 3vh;
-}
+} */
 
 /* .p-link {
     font-size: 12pt;
