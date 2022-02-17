@@ -1,22 +1,3 @@
-/* .landing-page {
-    background: url(../images/backgrounds/concrete_wall.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-} */
-
-/* .landing-page {
-    background: url(../images/backgrounds/gray_scratched.jpg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-} */
-
 .landing-page {
     background-image: radial-gradient(circle at center center, rgba(33,33,33,0),
     rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,
@@ -24,9 +5,8 @@
     transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 }
 
-/* For some reason background-image for gradients is not applying to page while background-images with jpg does */
+/* For some reason background-image for gradients is not applying to following pages while background-images with jpg does */
 /* I will temporarily change to images and hope to figure out this odd behavior later */
-/* Background images all need to be resized to 2k resolution max to increase render speed */
 .about-page {
     background: url(../images/backgrounds/paper_grain.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -63,6 +43,7 @@
     background-color: #472d3c;
 }
 
+/* General content formatting for each page */
 .content {
     display: flex;
     justify-content: center;
@@ -120,6 +101,7 @@
     text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
 }
 
+/* Handling for all links on each page */
 .nav-container {
     display: grid;
     grid-template: 100px / repeat(4, 150px);
@@ -140,7 +122,6 @@
     align-items: center;
     border: groove 8px orangered;
     border-radius: 1em;
-    /*background-color: #666666;*/
     text-align: center;
     box-shadow: 10px 5px 5px black;
     font-size: 20pt;
@@ -314,26 +295,6 @@ p {
     border-radius: 20%;
 }
 
-/* .about-me {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30vh;
-    max-width: 70vh;
-    text-align: left;
-    text-indent: 10pt;
-    color: black;
-    font-size: 18pt;
-    font-family: 'Courier New', Courier, monospace;
-}
-
- .about-content {
-    min-height: 3vh;
-} */
-
-/* .p-link {
-    font-size: 12pt;
-} */
-
 /* Handles animation underlining links during hover */
 a {
     position: relative;
@@ -342,7 +303,7 @@ a {
 }
 
 /* a:hover {
-    color: #000
+    color: #000 <--- Changes color of text while mousing over link
 } */
 
 a::before {
@@ -363,7 +324,6 @@ a:hover::before {
 }
 
 /* Color-specific underline animations */
-
 .black-text {
     position: relative;
     color: #000;

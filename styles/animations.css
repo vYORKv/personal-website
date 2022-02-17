@@ -1,3 +1,4 @@
+/* Simple fade animation for landing page */
 .animation-1 {
     position: fixed;
     top: 0;
@@ -16,6 +17,7 @@
     pointer-events: all;
 }
 
+/* Animates right to left for light pages */
 .animation-2 {
     position: fixed;
     top: 0;
@@ -31,6 +33,7 @@
     left: 0;
 }
 
+/* Animates top to bottom for dark pages */
 .animation-3 {
     position: fixed;
     top: 100%;
@@ -46,6 +49,7 @@
     top: 0;
 }
 
+/* Animates left to right for light pages */
 .animation-4 {
     position: fixed;
     top: 0;
@@ -61,6 +65,7 @@
     right: 0;
 }
 
+/* Animates bottom to top for dark pages */
 .animation-5 {
     position: fixed;
     bottom: 100%;
