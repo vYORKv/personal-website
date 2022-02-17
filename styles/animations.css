@@ -1,0 +1,33 @@
+.animation-1 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    background-color: orangered;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+
+.animation-1.is-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.animation-2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 0;
+    width: 100%;
+    z-index: 101;
+    background-color: whitesmoke;
+    transition: 0.5s ease-out;
+}
+
+.animation-2.is-active {
+    left: 0px;
+}
