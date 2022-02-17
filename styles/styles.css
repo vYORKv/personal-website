@@ -243,7 +243,7 @@
 .skills-lists {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: 75px 300px;
     grid-auto-flow: column;
     column-gap: 25px;
