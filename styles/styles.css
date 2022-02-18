@@ -167,6 +167,9 @@ li {
 }
 
 /* About page specific */
+.about-content {
+    min-height: 0;
+}
 
 .about-me {
     display: flex;
@@ -189,7 +192,7 @@ li {
     justify-content: center;
     align-items: center;
     text-align: left;
-    text-indent: 10pt;
+    text-indent: 14pt;
     color: rgb(232, 230, 227);
     font-size: 18pt;
     font-weight: bold;
@@ -209,7 +212,8 @@ li {
 }
 
 .hello-box {
-    gap: 125px;
+    /* gap: 125px; */
+    /* justify-content: space-between; */
 }
 
 .today-box {
