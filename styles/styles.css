@@ -173,46 +173,68 @@ li {
 
 .about-me {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello-text, .university-text,
+.japan-text, .welding-text,
+.today-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: left;
-    text-indent: 10pt;
+    text-indent: 18pt;
     color: rgb(232, 230, 227);
     font-size: 18pt;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.about-text {
-    width: 60%;
+.a-text {
     max-width: 70vh;
-    margin-left: 30vh;
 }
 
-.about-images {
-    width: 40%;
+.today-text {
+    max-width: 80vh;
+}
+
+.a-heading {
+    margin: 0;
+}
+
+.a-box {
+    display: flex;
+}
+
+.hello-box {
+    padding-right: 200px;
+}
+
+.welding-box {
+    padding-bottom: 25px;
+}
+
+.a-text, .a-img {
+    padding: 50px;
+}
+
+.today-box, .today-text {
+    padding: 5px 0;
 }
 
 .a-img {
     filter: drop-shadow(10px 10px 4px #45454d9c);
 }
 
-p {
-    padding-bottom: 150px;
-}
-
 #me {
-    padding: 50px;
     border-radius: 30%;
 }
 
-#lambda, #judo {
-    padding: 50px;
-    border-radius: 20%;
-}
-
+#lambda, #judo,
 #welding {
-    padding: 25px;
-    padding-left: 50px;
     border-radius: 20%;
 }
 
