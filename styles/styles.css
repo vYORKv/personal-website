@@ -167,6 +167,10 @@ li {
 }
 
 /* About page specific */
+.about-content {
+    min-height: 0;
+}
+
 .about-me {
     display: flex;
     flex-direction: row;
