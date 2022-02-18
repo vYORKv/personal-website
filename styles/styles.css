@@ -248,6 +248,7 @@ ul {
 
 li {
     font-size: 15pt;
+    font-weight: bold;
 }
 
 /* About page specific */
@@ -258,6 +259,7 @@ li {
     text-indent: 10pt;
     color: black;
     font-size: 18pt;
+    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
 
