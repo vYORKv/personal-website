@@ -167,9 +167,27 @@ li {
 }
 
 /* About page specific */
+
 .about-me {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: left;
+    text-indent: 10pt;
+    color: rgb(232, 230, 227);
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace; */
+}
+
+.hello-text, .university-text,
+.japan-text, .welding-text,
+.today-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     text-indent: 10pt;
     color: rgb(232, 230, 227);
@@ -178,37 +196,66 @@ li {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.about-text {
+.a-text {
+    max-width: 70vh;
+}
+
+.a-box {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 50px;
+
+}
+
+.hello-box {
+    gap: 125px;
+}
+
+.today-box {
+    padding: 0;
+}
+
+.a-text, .a-img {
+    padding: 15px;
+}
+
+/* .a-text {
+    width: 40%;
+} */
+
+/* .about-text {
     width: 60%;
     max-width: 70vh;
     margin-left: 30vh;
-}
+} */
 
-.about-images {
+/* .about-images {
     width: 40%;
-}
+} */
 
 .a-img {
     filter: drop-shadow(10px 10px 4px #45454d9c);
 }
 
-p {
+/* p {
     padding-bottom: 150px;
-}
+    width: 60%
+} */
 
 #me {
-    padding: 50px;
+    /* padding: 50px; */
     border-radius: 30%;
 }
 
 #lambda, #judo {
-    padding: 50px;
+    /* padding: 50px; */
     border-radius: 20%;
 }
 
 #welding {
-    padding: 25px;
-    padding-left: 50px;
+    /* padding: 25px;
+    padding-left: 50px; */
     border-radius: 20%;
 }
 
