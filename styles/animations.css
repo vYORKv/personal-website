@@ -6,7 +6,7 @@
     left: 0;
     right: 0;
     z-index: 101;
-    background-color: rgb(59, 57, 57);
+    background-color: #202324;
     opacity: 0;
     pointer-events: none;
     transition: 0.25s ease-out;
@@ -17,7 +17,7 @@
     pointer-events: all;
 }
 
-/* Animates right to left for light pages */
+/* Animates right to left */
 .animation-2 {
     position: fixed;
     top: 0;
@@ -25,7 +25,7 @@
     left: -100%;
     width: 100%;
     z-index: 101;
-    background-color: whitesmoke;
+    background-color: #202324;
     transition: 0.25s ease-out;
 }
 
@@ -33,7 +33,7 @@
     left: 0;
 }
 
-/* Animates top to bottom for dark pages */
+/* Animates top to bottom */
 .animation-3 {
     position: fixed;
     top: 100%;
@@ -41,7 +41,7 @@
     left: 0;
     right: 0;
     z-index: 101;
-    background-color: rgb(59, 57, 57);
+    background-color: #202324;
     transition: 0.25s ease-out;
 }
 
@@ -49,7 +49,7 @@
     top: 0;
 }
 
-/* Animates left to right for light pages */
+/* Animates left to right */
 .animation-4 {
     position: fixed;
     top: 0;
@@ -57,7 +57,7 @@
     right: -100%;
     width: 100%;
     z-index: 101;
-    background-color: whitesmoke;
+    background-color: #202324;
     transition: 0.25s ease-out;
 }
 
@@ -65,7 +65,7 @@
     right: 0;
 }
 
-/* Animates bottom to top for dark pages */
+/* Animates bottom to top */
 .animation-5 {
     position: fixed;
     bottom: 100%;
@@ -73,7 +73,7 @@
     left: 0;
     right: 0;
     z-index: 101;
-    background-color: rgb(59, 57, 57);
+    background-color: #202324;
     transition: 0.25s ease-out;
 }
 
